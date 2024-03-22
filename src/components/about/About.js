@@ -11,10 +11,37 @@ export default function About() {
     function aboutMeText() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat
-                about{firstName} </p>
+                about_{firstName} </p>
             <p><span style={{color: info.baseColor}}>about{firstName} <span
                 className={Style.green}>(main)</span> $ </span>
                 {info.bio}
+            </p>
+        </>;
+    }
+    function experienceText() {
+        return <>
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat {firstName}_Experience </p>
+            <p><span style={{color: info.baseColor}}> TCS <span
+                className={Style.green}>(July 2022 - CURRENT)</span> $ </span>
+                {info.job1}
+            </p>
+            <p>
+            {info.job1data}
+
+            </p>
+            <p><span style={{color: info.baseColor}}> BUCKMAN <span
+                className={Style.green}>(time -time)</span> $ </span>
+                {info.job2}
+            </p>
+            <p>
+            {info.job2data}
+            </p>
+            <p><span style={{color: info.baseColor}}> ARAVIND EYE HOSPITAL <span
+                className={Style.green}>(time - time)</span> $ </span>
+                {info.job3}
+            </p>
+            <p>
+            {info.job3data}
             </p>
         </>;
     }
@@ -49,11 +76,26 @@ export default function About() {
             </ul>
         </>;
     }
+    function certificationsText() {
+        return <>
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
+                achievements/certifications</p>
+            <p><span style={{color: info.baseColor}}>achievements/certifications <span
+                className={Style.green}>(main)</span> $</span> ls</p>
+            <ul>
+                {info.certifications.map((hobby, index) => (
+                    <li key={index}><Box component={'span'} mr={'1rem'}>{hobby.emoji}</Box>{hobby.label}</li>
+                ))}
+            </ul>
+        </>;
+    }
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
             <Terminal text={aboutMeText()}/>
+            <Terminal text={experienceText()}/>
             <Terminal text={skillsText()}/>
+            <Terminal text={certificationsText()}/>
             <Terminal text={miscText()}/>
         </Box>
     )

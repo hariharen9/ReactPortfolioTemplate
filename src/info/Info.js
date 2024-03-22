@@ -23,25 +23,25 @@ of what each of the values mean.
  */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
+    firstName: "Manassa",
+    lastName: "Varshni",
     initials: "js", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer",
+    position: "a DevOps Engineer at IBM",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: '☕',
-            text: 'fueled by coffee'
+            text: 'Fueled by Coffee'
         },
         {
             emoji: '🌎',
-            text: 'based in the US'
+            text: 'Based from INDIA'
         },
         {
             emoji: "💼",
-            text: "Systems Engineer at Google"
+            text: "Systems Engineer at TCS"
         },
         {
             emoji: "📧",
@@ -50,14 +50,9 @@ export const info = {
     ],
     socials: [
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
             link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
+            icon: 'fa fa-medium',
+            label: 'medium'
         },
         {
             link: "https://github.com",
@@ -79,6 +74,13 @@ export const info = {
 
     ],
     bio: "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    job1: "Systems Engineer",
+    job1data: "lorem imsum",
+    job2: "Data Analyst",
+    job2data: " lorem imsum",
+    job3: "Data Analyst",
+    job3data: "lorem imsum",
+
     skills:
         {
             proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
@@ -101,6 +103,26 @@ export const info = {
         {
             label: 'cooking',
             emoji: '🌶'
+        }
+// Same as above, change the emojis to match / relate to your hobbies or interests.
+// You can also remove the emojis if you'd like, I just think they look cute :P
+    ],
+    certifications: [
+        {
+            label: 'IBM CLOUD ADVOCATE V2',
+            emoji: '🔖'
+        },
+        {
+            label: 'theater',
+            emoji: '🔖'
+        },
+        {
+            label: 'movies',
+            emoji: '🔖'
+        },
+        {
+            label: 'cooking',
+            emoji: '🔖'
         }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
