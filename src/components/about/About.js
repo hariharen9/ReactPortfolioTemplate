@@ -22,7 +22,7 @@ export default function About() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cat {firstName}_Experience </p>
             <p><span style={{color: info.baseColor}}> TCS <span
-                className={Style.green}>(July 2022 - CURRENT)</span> $ </span>
+                className={Style.green}>(Jul 2022 - CURRENT)</span> $ </span>
                 {info.job1}
             </p>
             <p>
@@ -30,14 +30,14 @@ export default function About() {
 
             </p>
             <p><span style={{color: info.baseColor}}> BUCKMAN <span
-                className={Style.green}>(time -time)</span> $ </span>
+                className={Style.green}>(Dec 2021 - Jun2022)</span> $ </span>
                 {info.job2}
             </p>
             <p>
             {info.job2data}
             </p>
             <p><span style={{color: info.baseColor}}> ARAVIND EYE HOSPITAL <span
-                className={Style.green}>(time - time)</span> $ </span>
+                className={Style.green}>(Jun 2020 - Nov 2020)</span> $ </span>
                 {info.job3}
             </p>
             <p>
